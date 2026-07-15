@@ -39,6 +39,6 @@ jobs:
         with:
           name: build-artifacts
       - name: ls the content of the build-artifacts folder
-        run: ls
+        run: cd ~ && ls -la build-artifacts
       - name: Deploy
         run: echo "Deploying..."
