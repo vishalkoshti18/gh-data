@@ -45,5 +45,7 @@ jobs:
           name: build-artifacts
       - name: ls the content of the build-artifacts folder
         run: ls -l
+      - name: Get script filename
+        run: echo "Script filename: ${{ needs.build.outputs.script-file }}"
       - name: Deploy
         run: echo "Deploying..."
